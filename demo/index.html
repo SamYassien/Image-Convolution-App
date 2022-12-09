@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <!-- meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" -->
+
+        <!-- <meta http-equiv="Content-Security-Policy" content="font-src 'self' data:; img-src 'self' data:; default-src 'self'"> -->
+        <!-- enable cross origin header -->
+
+        <title>Image Convolution App</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1 style="font-family: Garamond, serif">Image Convolution</h1>
+        <!-- We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+
+        <div id="img_container">
+            <div class="row">
+                <div class="column">
+                    <button id="open_img" class="open_img_btn">Open Image</button>
+                </div>
+                <div class="column">
+                    <!-- <button class="dropbtn">Filters</button> -->
+                    <select id="filter" class="dropdown">
+                        <!-- <div class="dropdown-content"> -->
+                        <option value="orig">No Filter</option>
+                        <a href="#"><option value="gaussian">Gaussian Blur</option> </a>
+                        <a href="#"><option value="motion">Motion Blur</option> </a>
+                        <a href="#"><option value="box">Box Blur</option> </a>
+                        <a href="#"><option value="emboss">Emboss</option> </a>
+                        <a href="#"><option value="laplace">LaPlace</option> </a>
+                        <a href="#"><option value="sharpen">Sharpen</option> </a>
+                        <a href="#"><option value="edge">Edge</option> </a>
+                        <!-- </div> -->
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img id="img" src="dummy.png" alt="" width="500" height="500" />
+                </div>
+                <div class="column">
+                    <img id="img2" src="dummy.png" alt="" width="500" height="500" />
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px">
+            <button id="save_img" class="save_img_btn">Save</button>
+        </div>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
