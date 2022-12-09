@@ -16,8 +16,8 @@
 				<a href="index.html" class="navbar__logo">Home</a>
 				<nav class="navbar__menu">
 					<ul>
-						<li><a href="#">Option</a></li>
-						<li><a href="#">Option 2</a></li>
+						<li><a href="/about.html">Learn More</a></li>
+						<li><a href="/documentation.html">Documentation</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -52,6 +52,13 @@
 			<div class="steps__inner">
 				<div class="step">
 					<div class="step__media">
+						<img src="./images/linux.png" class="step__image">
+					</div>
+					<h4>Native Application</h4>
+					<p class="step__text" style="text-align: center;">Native Linux Application is available for download (built with electron-forge).<br> <a href="demo/index.html" target="_blank" style="color: blue;">Open Demo</a></p>
+				</div>
+				<div class="step">
+					<div class="step__media">
 						<img src="./images/multi.png" class="step__image">
 					</div>
 					<h4>Multithreaded</h4>
@@ -64,22 +71,30 @@
 					<h4>Apply Different Filters</h4>
 					<p class="step__text" style="text-align: center;">Apply different filters (ex: Gaussian Blur, Emboss, ...) to you image with a simple click </p>
 				</div>
-				<div class="step">
-					<div class="step__media">
-						<img src="./images/file-type-wasm.svg" class="step__image">
-					</div>
-					<h4>Fully Interface Library</h4>
-					<p class="step__text" style="text-align: center;">A fully Interfaced library written in C++ and transpiled into JS/WASM, providing high usability and efficiency</p>
-				</div>
+				
 			</div>
 		<div class="steps__inner">
+			<div class="step">
+				<div class="step__media">
+					<img src="./images/file-type-wasm.svg" class="step__image">
+				</div>
+				<h4>Fully Interface Library</h4>
+				<p class="step__text" style="text-align: center;">A fully Interfaced library written in C++ and transpiled into JS/WASM, providing high usability and efficiency</p>
+			</div>
 			<div class="step">
 				<div class="step__media">
 					<img src="./images/undraw_responsive.svg" class="step__image">
 				</div>
 				<h4>Simple UI</h4>
 				<p class="step__text" style="text-align: center;">Extremely easy UI; <br>
-					Open Image &RightArrow; Choose Filter &RightArrow; Display Output &RightArrow; Save? &RightArrow; Done. </p>
+					Open Image &RightArrow; Choose Filter &RightArrow; Display Output &RightArrow; Save? &RightArrow; Done </p>
+			</div>
+			<div class="step">
+				<div class="step__media">
+					<img src="./images/report.png" class="step__image">
+				</div>
+				<h4>Time Analysis</h4>
+				<p class="step__text" style="text-align: center;">Click here to access extensive timing and performance data on out solution</p>
 			</div>
 		</div>
 		</div>
@@ -89,11 +104,11 @@
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
-					<img src="./images/undraw_browser.svg" class="expanded__image">
+					<img src="./images/evie2_default_bg.jpeg">
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Natural styling with almost nothing to learn</h2>
-					<p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+					<h2 class="expanded__title">Apply Image Cnvolution Filters in 3 steps</h2>
+					<p class="expanded__text">imgFilter brings simple, intuitive UI together with high functionality. Just pick an image and choose between a number of built-in filter to play around with the details of your image.</p>
 				</div>
 			</div>
 		</div>
@@ -102,16 +117,16 @@
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
-					<img src="./images/undraw_frameworks.svg" class="expanded__image">
+					<img src="./images/time.png" >
 				</div>
 				<div class="expanded__content">
-					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
-					<p class="expanded__text">Evie has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+					<h2 class="expanded__title">Highly usable and versatile Application + Library</h2>
+					<p class="expanded__text">A singlethreaded and a multithreaded implementations of the image convolutions are provided in our library. For more information, please see documentation.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="expanded landing__section">
+	<!-- <div class="expanded landing__section">
 		<div class="container">
 			<div class="expanded__inner">
 				<div class="expanded__media">
@@ -123,50 +138,20 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Call To Action -->
 	<div class="cta cta--reverse">
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Get started now</h2>
-				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
-				<a href="#" class="button button__accent">Download Evie</a>
+				<a href="Linux/imgFilter_deb.zip" class="button button__accent" download="imgFilter_linux_x64_deb.zip">Download imgFilter&#8482</a>
 			</div>
 		</div>
 	</div>
 	<!-- Footer -->
 	<div class="footer footer--dark">
 		<div class="container">
-			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">Evie theme</a>
-				<div class="footer__data">
-					<div class="footer__data__item">
-						<div class="footer__row">
-							Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina Limpitsouni</a>
-						</div>
-						<div class="footer__row">
-						Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
-						</div>
-					</div>
-					<div class="footer__data__item">
-					<div class="footer__row">
-						<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
-					</div>
-					<div class="footer__row">
-						<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
-					</div>
-					<div class="footer__row">
-						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
-					</div>
-					<div class="footer__row">
-						<a href="./additional.html" class="footer__link">MIT license</a>
-					</div>
-				</div>
-			</div>
+		
 		</div>
 	</div>
 <script src='js/app.min.js'></script>

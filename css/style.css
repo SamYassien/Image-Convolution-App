@@ -1263,7 +1263,7 @@ select::-ms-expand {
 .expanded__image {
     width: 90%;
     max-width: 220px;
-    padding: 16pt 0;
+    padding: 4pt 0;
 }
 @media (min-width: 992px) {
     .expanded__image {
